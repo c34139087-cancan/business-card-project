@@ -179,10 +179,8 @@
 
             <div class="qr-section">
                 <h2 class="qr-title">Scan to Save Contact</h2>
-
-                
-                <div id="qrcode">
-</div>                <p class="qr-subtitle">Scan with your phone camera</p>
+  <div id="qrcode">             
+                <p class="qr-subtitle">Scan with your phone camera</p>
             </div>
         </div>
     </div>
@@ -200,15 +198,6 @@ ORG:Cancan's Corner
 TITLE:Gift Wrapping Service
 END:VCARD`;
 
-        // Generate QR code
-        new QRCode(document.getElementById("qrcode"), {
-            text: vCard,
-            width: 200,
-            height: 200,
-            colorDark: "#40295b",
-            colorLight: "#ffffff",
-            correctLevel: QRCode.CorrectLevel.H
-        });
-    </script>
+</script>  
 
 </body></html>
