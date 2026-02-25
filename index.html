@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/c3413/Downloads/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candida Cook - Digital Business Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #40295b 0%, #20113c 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #685281 0%, #866e9f 100%);
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 4px solid #f5d79a;
+            overflow: hidden;
+            background: white;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            color: #f5d79a;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 12px;
+            background: #ecdb9f;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(104, 82, 129, 0.2);
+        }
+
+        .contact-item svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            fill: #40295b;
+        }
+
+        .contact-item a {
+            color: #20113c;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            color: #685281;
+        }
+
+        .qr-section {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #ecdb9f;
+        }
+
+        .qr-title {
+            color: #40295b;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        #qrcode {
+            display: inline-block;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-subtitle {
+            color: #685281;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .name {
+                font-size: 28px;
+            }
+            
+            .title {
+                font-size: 16px;
+            }
+            
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="logo">
+                <img src="Logo.png" alt="Cancans Corner Logo">
+            </div>
+            <h1 class="name">Candida Cook</h1>
+            <p class="title">Cancan's Corner - Gift Wrapping Service</p>
+        </div>
+
+        <div class="content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                    </svg>
+                    <a href="mailto:c34139087@gmail.com">c34139087@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                    </svg>
+                    <a href="tel:931-304-4499">931-304-4499</a>
+                </div>
+            </div>
+
+            <div class="qr-section">
+                <h2 class="qr-title">Scan to Save Contact</h2>
+                <div id="qrcode"></div>
+                <p class="qr-subtitle">Scan with your phone camera</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script>
+        // Create vCard data
+        const vCard = `BEGIN:VCARD
+VERSION:3.0
+FN:Candida Cook
+TEL;TYPE=CELL:931-304-4499
+EMAIL:c34139087@gmail.com
+ORG:Cancan's Corner
+TITLE:Gift Wrapping Service
+END:VCARD`;
+
+        // Generate QR code
+        new QRCode(document.getElementById("qrcode"), {
+            text: vCard,
+            width: 200,
+            height: 200,
+            colorDark: "#40295b",
+            colorLight: "#ffffff"
+        });
+    </script>  
+
+</body></html>
